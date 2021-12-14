@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const a = {
+            nama :"farhan",
+            kelas :"11",
+            umur : "17"
+        }
+        for(const b in a){
+            document.writeln(`<p>${b} : ${a[b]} </p>`)
+        }
+
+        const c = ['farhan',13,14]
+        for(const d in c){
+            document.writeln(`<p>${d} : ${c[d]}</p>`)
+        }
+    </script>
+</body>
+</html>

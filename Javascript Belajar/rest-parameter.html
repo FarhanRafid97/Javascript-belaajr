@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(name, ...data){
+            let total = 0;
+            for(const item of data){
+                total += item
+            }
+            document.writeln(`nama data${name} nomor ${total}`)
+        }
+        //spread parameter
+        const a = [1,2,3,4,5,6]
+        sum("farhan",2,3,4,32,32,4)
+        sum("farhan", ...a)
+
+    </script>
+</body>
+</html>

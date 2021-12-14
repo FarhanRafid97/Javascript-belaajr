@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+{
+        const nama = ["farhan","rafid","syauqi","2aa","3daad"]
+        const [firstname, middlename, lname, ...other] = nama
+
+        console.log(firstname)
+        console.log(middlename)
+        console.log(lname)
+        console.log(other)
+}
+{
+    const person = {
+        fname : "farhanss",
+        mname : "yaya",
+        lastname :"yoyo",
+        country : {
+            kota : "padang",
+            negara : "indonesia"
+
+        },
+        hoby : "game",
+        negara : "indonesia"
+    }
+
+    let {fname, mname,lastname, country:{kota,negara}, ...other} = person;
+    console.log(`Nama :${fname} ${mname} ${lastname}`)
+    console.log(`Kota : ${kota}  negara:${negara}`)
+    console.log(other)
+
+}
+
+    </script>
+</body>
+</html>

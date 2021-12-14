@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const nik = prompt('Isikan NIK anda')
+        let a;
+        if(nik == 1123){
+            a = 80
+        }else if(nik == 2231){
+            a = 20
+        }
+
+
+        let b;
+        if(a >= 70){
+            b = "A"
+        }else if(a >= 60) {
+            b = "B"
+        }else if(a >= 50){
+            b = "c"
+
+        }else{
+            b = "D"
+        }
+
+        alert(`Nilai ANda adalah :${b}`)
+
+        switch(b){
+            case "A":
+                alert("anda Lulus Dengan Nilai Terbaik")
+                break;
+                case "B":
+                alert("anda Lulus")
+                break;
+                case "C":
+                alert("anda Tidak Lulus")
+                break;
+             default:
+                 alert("Ulang tahun depan")
+        }
+    </script>
+</body>
+</html>

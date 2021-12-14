@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let a = (value) =>{
+            let total = 1;
+            for(let i = 1; i <= value; i++){
+                total *= i;
+            }
+            return total
+        }
+       console.log(a(10))
+
+       let b = 10;
+       let c = (num)=>{
+           const result = []
+          for(let i = 1; i <= num; i++){
+              if(i % 2 === 1){
+              console.log(`yield ${i}`)
+              result.push(i)
+              }
+              }          
+       }
+     c(20)
+
+     const nama = (name) => console.info(`hello ${name}`)
+nama("farhan")
+nama("dodo")
+
+const angka1 = 10;
+const angka2 = 20;
+const hasil = (no1,no2) => no1 + no2
+console.log(hasil(angka1,angka2))
+
+const panggilan = nm => console.log(`hye ${nm}`)
+
+panggilan("didik")
+    </script>
+</body>
+</html>

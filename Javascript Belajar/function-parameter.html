@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            height: 200px;
+            width: 300px;
+            background-color: aqua;
+            margin: auto;
+            position: relative;
+            top: 10rem;
+        }
+
+        .row{
+            position: absolute;
+            top: 2rem;
+            left: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+    <input type="text" id="angka1">
+</br>
+    <input type="text" id="angka2">
+    <br>
+    <button onclick="alert(pertambahan())">+</button>
+    <button onclick="alert(perkalian())">x</button>
+    <br>
+    <button onclick="alert(pengurangan())">-</button>
+    <button onclick="alert(pembagian())">/</button>
+    </div>
+</div>
+    <script>
+        function pertambahan(){
+            let angka1 = document.getElementById("angka1").value;
+            let angka2 = document.getElementById("angka2").value;
+            let intangka1 = parseInt(angka1)
+            let intangka2 = parseInt(angka2)
+            let hasil = intangka1 + intangka2
+            return hasil;
+        }
+        function perkalian(){
+            let angka1 = document.getElementById("angka1").value;
+            let angka2 = document.getElementById("angka2").value;
+            let intangka1 = parseInt(angka1)
+            let intangka2 = parseInt(angka2)
+            let hasil = intangka1 * intangka2
+            return hasil;
+        }
+        function pembagian(){
+            let angka1 = document.getElementById("angka1").value;
+            let angka2 = document.getElementById("angka2").value;
+            let intangka1 = parseInt(angka1)
+            let intangka2 = parseInt(angka2)
+            let hasil = intangka1 / intangka2
+            return hasil;
+        }
+        function pengurangan(){
+            let angka1 = document.getElementById("angka1").value;
+            let angka2 = document.getElementById("angka2").value;
+            let intangka1 = parseInt(angka1)
+            let intangka2 = parseInt(angka2)
+            let hasil = intangka1 - intangka2
+            return hasil;
+        }
+       
+        
+    </script>
+</body>
+</html>
